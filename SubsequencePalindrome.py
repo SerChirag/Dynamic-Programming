@@ -41,7 +41,7 @@ def SPN(i,j):
 
 
 
-s = "GEEKSFORGEEKS"
+s = "GEEKS"
 a = len(s)-1
 #print SPN(0,a)
 print SP(s)
