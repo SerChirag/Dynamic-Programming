@@ -1,13 +1,10 @@
 def SP(s):
-
     p = len(s)
     e = [[0 for j in range(p)] for i in range(p)]
     maxi = 1
     for l in range(1,p+1):
         for i in range(0,p-l+1):
-
             j = i+l-1
-            
             if(i == j):
                 e[i][j] = 1
             elif(i == j-1 and s[i] == s[j]):
@@ -24,14 +21,7 @@ def SP(s):
                         maxi = crap
             else:
                 e[i][j] = 0
-        
-
     return maxi
-
-
-
-
-
 
 s = "qwertxiggixvbn"
 a = len(s)-1
